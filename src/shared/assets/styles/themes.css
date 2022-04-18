@@ -1,0 +1,383 @@
+/* ------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------ */
+/* ------------------------------------------ main ------------------------------------------ */
+
+/* .pinkColor {
+  --primary-color: 173, 20, 87;
+  --primary-light: 197, 17, 98;
+  --primary-dark: 136, 14, 79;
+}
+.blueColor {
+  --primary-color: 21, 101, 192;
+  --primary-light: 41, 98, 255;
+  --primary-dark: c;
+}
+.purpleColor {
+  --primary-color: 106, 27, 154;
+  --primary-light: 170, 0, 255;
+  --primary-dark: 74, 20, 140;
+}
+.hpdsColor {
+  --primary-color: 69, 181, 170;
+  --primary-light: 132, 255, 255;
+  --primary-dark: 0, 96, 100;
+}
+.tealColor {
+  --primary-color: 0, 105, 92;
+  --primary-light: 0, 191, 165;
+  --primary-dark: 0, 77, 64;
+}
+.yellowColor {
+  --primary-color: 249, 168, 37;
+  --primary-light: 255, 214, 0;
+  --primary-dark: 245, 127, 23;
+}
+.indigoColor {
+  --primary-color: 40, 53, 147;
+  --primary-light: 48, 79, 254;
+  --primary-dark: 26, 35, 126;
+}
+.greenColor {
+  --primary-color: 46, 125, 50;
+  --primary-light: 100, 221, 23;
+  --primary-dark: 27, 94, 32;
+} */
+main {
+  background-color: var(--body-color);
+}
+/* ------------------------------------------ navbar ------------------------------------------ */
+.navbar {
+  background-color: var(--navbar-bg-color);
+  color: var(--navbar-text-color);
+}
+/* ------------------------------------------ modal content ------------------------------------------ */
+.primary-color .modal-header {
+  background-color: rgba(var(--primary-color), 1);
+}
+.modal-content {
+  background: var(--card-color);
+}
+.modal-content .btn-outline-dark {
+  color: var(--link-color) !important;
+  border: 2px solid var(--link-color) !important;
+}
+.modal-footer{
+  border-top: 1px solid var(--border-color);
+}
+/* ------------------------------------------ side nav ------------------------------------------ */
+.side-nav {
+  background-color: var(--sidenav-bg-color);
+}
+.side-nav .collapsible > li a {
+  color: var(--sidenav-item-color);
+}
+.side-nav .collapsible > li a.collapsible-header:not(.active):hover {
+  color: var(--sidenav-item-color);
+}
+.side-nav .collapsible > li a.collapsible-header.active {
+  background-color: rgba(var(--primary-color), 0.9);
+  color: #fff;
+}
+.side-nav .collapsible > li a.collapsible-header.active:hover {
+  background-color: rgba(var(--primary-color), 0.9);
+  color: #fff;
+}
+/* subitems */
+.side-nav .collapsible-body a {
+  background-color: rgba(var(--primary-color), 0.05);
+}
+.light .side-nav .collapsible-body a.active {
+  color: rgba(var(--primary-dark), 1);
+}
+.dark .side-nav .collapsible-body a.active {
+  color: rgba(var(--primary-light), 1);
+}
+.light .side-nav .collapsible li a:hover {
+  background-color: rgba(var(--primary-dark), 0.1);
+}
+.dark .side-nav .collapsible li a:hover {
+  background-color: rgba(var(--primary-light), 0.1);
+}
+/* ------------------------------------------ search nav ------------------------------------------ */
+.search-nav:focus {
+  border-color: rgba(var(--primary-light), 1);
+}
+.search-nav-result a:hover {
+  color: rgba(var(--primary-dark), 1) !important;
+}
+.light .MuiInputBase-root {
+  color: #333 !important;
+}
+.dark .MuiInputBase-root {
+  color: #fff !important;
+}
+/* ------------------------------------------ checkboxes ------------------------------------------ */
+.form-check-input[type="checkbox"]:checked + label:not(.disabled)::before,
+label.btn input[type="checkbox"]:checked + label:not(.disabled)::before {
+  border-right-color: rgba(var(--primary-color), 1);
+  border-bottom-color: rgba(var(--primary-color), 1);
+}
+/* ------------------------------------------ form control ------------------------------------------ */
+
+/* .dark .form-control {
+  color: #eee;
+} */
+/* .light .form-control:focus {
+  color: #444;
+}
+.dark .form-control:focus {
+  color: #fff;
+} */
+.md-form input:not([type]):focus:not([readonly]),
+.md-form input[type="text"]:not(.browser-default):focus:not([readonly]),
+.md-form input[type="password"]:not(.browser-default):focus:not([readonly]),
+.md-form input[type="email"]:not(.browser-default):focus:not([readonly]),
+.md-form input[type="url"]:not(.browser-default):focus:not([readonly]),
+.md-form input[type="time"]:not(.browser-default):focus:not([readonly]),
+.md-form input[type="date"]:not(.browser-default):focus:not([readonly]),
+.md-form input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+.md-form
+  input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+.md-form input[type="tel"]:not(.browser-default):focus:not([readonly]),
+.md-form input[type="number"]:not(.browser-default):focus:not([readonly]),
+.md-form input[type="search"]:not(.browser-default):focus:not([readonly]),
+.md-form input[type="search-md"]:focus:not([readonly]),
+.md-form textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid rgba(var(--primary-dark), 1);
+  box-shadow: 0 1px 0 0 rgba(var(--primary-light), 1);
+}
+.md-form input:not([type]):focus:not([readonly]) + label,
+.md-form input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form
+  input[type="password"]:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form
+  input[type="email"]:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form input[type="url"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type="time"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type="date"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form
+  input[type="datetime"]:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form
+  input[type="datetime-local"]:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form input[type="tel"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form
+  input[type="number"]:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form
+  input[type="search"]:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form input[type="search-md"]:focus:not([readonly]) + label,
+.md-form textarea.md-textarea:focus:not([readonly]) + label {
+  color: rgba(var(--text-color), 1);
+}
+
+.md-form input:not([type]):focus:not([readonly]) + label,
+.md-form input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form
+  input[type="password"]:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form
+  input[type="email"]:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form input[type="url"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type="time"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type="date"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form
+  input[type="datetime"]:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form
+  input[type="datetime-local"]:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form input[type="tel"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form
+  input[type="number"]:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form
+  input[type="search"]:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form input[type="search-md"]:focus:not([readonly]) + label,
+.md-form textarea.md-textarea:focus:not([readonly]) + label {
+  color: rgba(var(--primary-light), 1);
+}
+/* ------------------------------------------ dropdowns ------------------------------------------ */
+.dropdown-content li:not(.disabled) > span {
+  color: rgba(var(--dark-color), 1);
+}
+.text-primary {
+  color: rgba(var(--primary-light), 1) !important;
+}
+.dropdown .dropdown-menu .dropdown-item:hover,
+.dropdown-content li:hover,
+.dropdown-content li:not(.disabled):hover span,
+.dropdown-content li.active > span {
+  background-color: rgba(var(--primary-color), 1);
+  color: rgba(var(--text-color), 1);
+}
+
+/* ------------------------------------------ user drop down ------------------------------------------ */
+.user-dropdown-color {
+  background-color: rgba(var(--primary-dark), 1);
+}
+.dropdownItem:hover {
+  color: rgba(var(--primary-color), 1) !important;
+}
+.selectedlayout {
+  border: 2px solid rgba(var(--primary-dark), 1);
+}
+.selected-background-image {
+  border: 2px solid rgba(var(--primary-dark), 1);
+  border-radius: 4px;
+}
+
+/* ------------------------------------------ card ------------------------------------------ */
+.card {
+  background-color: var(--card-color);
+}
+/* ------------------------------------------ link ------------------------------------------ */
+a {
+  color: var(--link-color);
+}
+
+/* ------------------------------------------ text ------------------------------------------ */
+.primary-text {
+  color: rgba(var(--primary-color), 1) !important;
+}
+.primary-text-light {
+  color: rgba(var(--primary-light), 1) !important;
+}
+.primary-text-dark {
+  color: rgba(var(--primary-dark), 1) !important;
+}
+.grey-text-light {
+  color: #999;
+}
+strong{
+  color: var(--input-color);
+}
+/* ------------------------------------------ inputs ------------------------------------------ */
+.input,
+.input:focus,
+.form-control,
+.form-control:focus,
+.select-wrapper input.select-dropdown,
+.md-form label,
+.select-wrapper > label.mdb-main-label {
+  color: var(--input-color);
+}
+
+
+/* ------------------------------------------ colors ------------------------------------------ */
+.dynamic-text-color {
+  color: rgba(var(--content-color), 1) !important;
+}
+.primary-color {
+  background-color: rgba(var(--primary-color), 1) !important;
+  color: rgba(var(--text-color), 1) !important;
+}
+.primary-light {
+  background-color: rgba(var(--primary-light), 1) !important;
+  /* color: rgba(var(--text-color), 1) !important; */
+}
+.primary-dark {
+  background-color: rgba(var(--primary-dark), 1) !important;
+  /* color: rgba(var(--text-color), 1) !important; */
+}
+/* ------------------------------------------ theme high light ------------------------------------------ */
+
+.theme-highLight {
+  background-color: rgba(var(--primary-color), 1);
+}
+/* ------------------------------------------ buttons ------------------------------------------ */
+.secondary-button {
+  background-color: rgba(var(--secondary-button), 1) !important;
+  color: #ffffff !important;
+}
+.tertiary-button {
+  background-color: rgba(var(--tertiary-button), 1) !important;
+  color: #ffffff !important;
+}
+
+/* ------------------------------------------ gradiants ------------------------------------------ */
+.custom-gradiant-1 {
+  background: var(--gradiant-1);
+}
+.custom-gradiant-1 {
+  background: var(--gradiant-1);
+}
+.custom-gradiant-1 {
+  background: var(--gradiant-1);
+}
+.custom-gradiant-1 {
+  background: var(--gradiant-1);
+}
+/* ------------------------------------------ progress bar ------------------------------------------ */
+
+.custom-progress-color {
+  background-color: rgba(var(--primary-color), 1) !important;
+}
+/* ------------------------------------------ list item iscsi ------------------------------------------ */
+
+.list-group-item {
+  border: 0;
+  margin-bottom: 1px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.list-group-item:hover {
+  color: rgba(var(--primary-color), 1) !important;
+}
+.list-group-item:last-child {
+  border-bottom: none;
+}
+/* ------------------------------------------ hardware status component items ------------------------------------------ */
+
+.system-component-items li {
+  /* margin: .5rem 0; */
+  cursor: pointer;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 2rem;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.system-component-items li:first-child {
+  border-top: none;
+}
+.system-component-items li:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.system-component-items li:hover {
+  color: rgba(var(--primary-color), 1) !important;
+}
+.system-component-items li.active {
+  color: rgba(var(--primary-color), 1) !important;
+}
+
+/* ------------------------------------------ user-guide ------------------------------------------ */
+
+.user-guide{
+  background-color: var(--userguid-color);
+  color: var(--input-color);
+}
+
+/* ------------------------------------------ export ----------------------------------------------- */
+.lighten-5{
+  background-color: var(--userguid-color);
+}
+/* ------------------------------------------ password ----------------------------------------------- */
+.togglePassword{
+  color: var(--input-color);
+}
+
+/* ------------------------------------------ pool chart ----------------------------------------------- */
+.teal.lighten-5 {
+  background-color: var(--poolchart-background) !important;
+}
+.chart-text-color {
+  color: var(--input-color);
+}

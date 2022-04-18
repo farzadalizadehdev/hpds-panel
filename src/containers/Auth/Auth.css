@@ -1,0 +1,46 @@
+.login-wrapper {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+#login .view {
+  height: 100%;
+  width: 100%;
+}
+
+#login .form-control {
+  color: #fff;
+}
+
+#login .form-control:focus {
+  color: #fff;
+}
+
+#login .card {
+  background-color: rgb(0, 0, 0, 0.85);
+}
+
+#login h6 {
+  line-height: 1.7;
+}
+
+#login .form-check {
+  margin-bottom: 0 !important;
+}
+
+#login .md-form label {
+  color: #ffffff;
+}
+
+#login .md-form input[type="text"]:focus:not([readonly]) + label,
+#login .md-form input[type="password"]:focus:not([readonly]) + label,
+#login .md-form input[type="email"]:focus:not([readonly]) + label {
+  color: #45b5aa;
+}
+
+#login .md-form input[type="text"]:focus:not([readonly]),
+#login .md-form input[type="password"]:focus:not([readonly]),
+#login .md-form input[type="email"]:focus:not([readonly]) {
+  border-bottom: 1px solid #45b5aa;
+  box-shadow: 0 1px 0 0 #45b5aa;
+}

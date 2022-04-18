@@ -1,0 +1,9 @@
+.lazyWrapper {
+    height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lazyWrapper .lazyLogo {
+    width: 200px;
+}
