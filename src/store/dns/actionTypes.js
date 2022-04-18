@@ -1,0 +1,9 @@
+//dns
+export const FETCH_DNS_START = "FETCH_DNS_START";
+export const FETCH_DNS_SUCCESS = "FETCH_DNS_SUCCESS";
+export const FETCH_DNS_FAIL = "FETCH_DNS_FAIL";
+
+//update dns
+export const UPDATE_DNS_START = "UPDATE_DNS_START";
+export const UPDATE_DNS_SUCCESS = "UPDATE_DNS_SUCCESS";
+export const UPDATE_DNS_FAIL = "UPDATE_DNS_FAIL";

@@ -1,0 +1,7 @@
+//disk
+
+export const FETCH_DISK_START = 'FETCH_DISK_START';
+
+export const FETCH_DISK_SUCCESS = 'FETCH_DISK_SUCCESS';
+
+export const FETCH_DISK_FAIL = 'FETCH_DISK_FAIL';

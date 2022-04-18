@@ -1,0 +1,19 @@
+//host
+export const FETCH_HOST_START = "FETCH_HOST_START";
+export const FETCH_HOST_SUCCESS = "FETCH_HOST_SUCCESS";
+export const FETCH_HOST_FAIL = "FETCH_HOST_FAIL";
+
+//delete host
+export const DELETE_HOST_START = "DELETE_HOST_START";
+export const DELETE_HOST_SUCCESS = "DELETE_HOST_SUCCESS";
+export const DELETE_HOST_FAIL = "DELETE_HOST_FAIL";
+
+//create host
+export const CREATE_HOST_START = "CREATE_HOST_START";
+export const CREATE_HOST_SUCCESS = "CREATE_HOST_SUCCESS";
+export const CREATE_HOST_FAIL = "CREATE_HOST_FAIL";
+
+//set host
+export const SET_HOST_START = "SET_HOST_START";
+export const SET_HOST_SUCCESS = "SET_HOST_SUCCESS";
+export const SET_HOST_FAIL = "SET_HOST_FAIL";

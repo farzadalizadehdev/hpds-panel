@@ -243,7 +243,7 @@ const App = (props) => {
           <main style={{ ...dynamicStyle }}>
             <Routes onChange={() => assessLocation()} />
           </main>
-            <AppSetting
+          <AppSetting
             isShowing={settingModal}
             toggle={() => handleToggleSettingModal()}
           />

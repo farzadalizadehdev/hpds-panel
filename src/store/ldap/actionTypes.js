@@ -1,0 +1,14 @@
+//fetch ldap
+export const FETCH_LDAP_START = "FETCH_LDAP_START";
+export const FETCH_LDAP_SUCCESS = "FETCH_LDAP_SUCCESS";
+export const FETCH_LDAP_FAIL = "FETCH_LDAP_FAIL";
+
+//ldap test
+export const LDAP_TEST_START = "LDAP_TEST_START";
+export const LDAP_TEST_SUCCESS = "LDAP_TEST_SUCCESS";
+export const LDAP_TEST_FAIL = "LDAP_TEST_FAIL";
+
+//ldap config
+export const LDAP_CONFIG_START = "LDAP_CONFIG_START";
+export const LDAP_CONFIG_SUCCESS = "LDAP_CONFIG_SUCCESS";
+export const LDAP_CONFIG_FAIL = "LDAP_CONFIG_FAIL";

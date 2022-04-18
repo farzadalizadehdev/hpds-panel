@@ -47,6 +47,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onTryAutoLogin: () => dispatch(actions.authCheckState()),
+    onInitSummary: () => dispatch(actions.initFetchSummary())
   };
 };
 
